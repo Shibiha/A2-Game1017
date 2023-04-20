@@ -1,0 +1,14 @@
+﻿  Engine.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(156,2): error C2653: 'STMA': is not a class or namespace name
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(160,33): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(161,33): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(175,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(179,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(183,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(187,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(297,2): error C2653: 'STMA': is not a class or namespace name
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(373,2): error C2653: 'STMA': is not a class or namespace name
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\GAME1007_M4_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(373,8): error C3861: 'Quit': identifier not found
+  State.cpp
+  StateManager.cpp
+  Generating Code...
