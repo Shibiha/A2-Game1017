@@ -1,0 +1,14 @@
+﻿  Enemy.cpp
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Enemy.cpp(8,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Engine.cpp
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(131,81): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(132,86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(134,81): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(135,86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  GameObject.cpp
+  Main.cpp
+  Player.cpp
+  PlayerBullet.cpp
+C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\PlayerBullet.cpp(8,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  GAME1007_W05_Framework.vcxproj -> C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\Bin\GAME1007_W05_Framework.exe
