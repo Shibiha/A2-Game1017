@@ -143,16 +143,25 @@
   <ItemGroup>
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="EndButton.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MathManager.cpp" />
+    <ClCompile Include="ObstacleRow.cpp" />
+    <ClCompile Include="Obstacle.cpp" />
+    <ClCompile Include="PauseButton.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="BackgroundScrolling.cpp" />
+    <ClCompile Include="Primitives.cpp" />
     <ClCompile Include="RenderManager.cpp" />
     <ClCompile Include="SpriteSheet.cpp" />
-    <ClCompile Include="States.cpp" />
+    <ClCompile Include="StartButton.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
@@ -160,16 +169,25 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Background.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="EndButton.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="EventManager.h" />
+    <ClInclude Include="FontManager.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="MathManager.h" />
+    <ClInclude Include="Obstacle.h" />
+    <ClInclude Include="ObstacleRow.h" />
+    <ClInclude Include="PauseButton.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="BackgroundScrolling.h" />
+    <ClInclude Include="Primitives.h" />
     <ClInclude Include="RenderManager.h" />
     <ClInclude Include="SpriteSheet.h" />
-    <ClInclude Include="States.h" />
+    <ClInclude Include="StartButton.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="StateManager.h" />
     <ClInclude Include="TextureManager.h" />
   </ItemGroup>

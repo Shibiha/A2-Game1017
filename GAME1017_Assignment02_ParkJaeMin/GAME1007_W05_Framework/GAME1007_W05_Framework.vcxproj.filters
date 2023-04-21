@@ -60,11 +60,38 @@
     <ClCompile Include="StateManager.cpp">
       <Filter>Management</Filter>
     </ClCompile>
-    <ClCompile Include="States.cpp">
+    <ClCompile Include="State.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="MathManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EndButton.cpp">
+      <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseButton.cpp">
+      <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ObstacleRow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,11 +134,38 @@
     <ClInclude Include="StateManager.h">
       <Filter>Management</Filter>
     </ClInclude>
-    <ClInclude Include="States.h">
+    <ClInclude Include="State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="MathManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EndButton.h">
+      <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseButton.h">
+      <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ObstacleRow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
