@@ -16,11 +16,11 @@
     <Filter Include="Button">
       <UniqueIdentifier>{0fbd02b6-e1e2-46e2-83cf-7850c2819dd7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Player">
-      <UniqueIdentifier>{4739e0a4-1f78-41fc-bccf-6291e6faa0f6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Game Objects">
       <UniqueIdentifier>{348e1adb-9d97-4009-8db3-9eb6c06dbc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Management">
+      <UniqueIdentifier>{ccf5b47e-1783-47fc-930b-f29e7faf3650}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,9 +33,6 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerBullet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -45,8 +42,29 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Game Objects</Filter>
     </ClCompile>
-    <ClCompile Include="ScrollingBackground.cpp">
+    <ClCompile Include="BackgroundScrolling.cpp">
       <Filter>Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="States.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Button</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,9 +72,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerBullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
@@ -68,7 +83,7 @@
     <ClInclude Include="GameObject.h">
       <Filter>Game Objects</Filter>
     </ClInclude>
-    <ClInclude Include="ScrollingBackground.h">
+    <ClInclude Include="BackgroundScrolling.h">
       <Filter>Game Objects</Filter>
     </ClInclude>
     <ClInclude Include="SpriteSheet.h">
@@ -76,6 +91,27 @@
     </ClInclude>
     <ClInclude Include="Animation.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="States.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Button</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

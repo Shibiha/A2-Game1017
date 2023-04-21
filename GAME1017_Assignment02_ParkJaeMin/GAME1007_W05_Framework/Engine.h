@@ -3,18 +3,20 @@
 #define __ENGINE_H__
 #include <SDL.h>
 #include <SDL_image.h>
-#include <SDL_mixer.h>
 #include <chrono>
 #include <vector>
-#include "GameObject.h"
-#include "Player.h"
-#include "PlayerBullet.h"
-#include "Enemy.h"
+#include <map>
+#include <string>
+#include <SDL_mixer.h>
+
 using namespace std;
 
-#define WIDTH 1024
-#define HEIGHT 768
-#define FPS 60
+const int WIDTH = 1536;
+const int HEIGHT = 768;
+const int FPS = 120;
+const int PAUSE_WIDTH = 768;
+const int PAUSE_HEIGHT = 384;
+
 
 class Engine
 {
@@ -26,28 +28,31 @@ public: // Put public heading first so you ALWAYS question why things are public
 	double GetDeltaTime();
 	void SetRunning(bool run);
 
+	// Yes I know this is not the greatest, but I don't want unneccesary accessors and not keen on creating an EventManager component at the moment.
+	SDL_FPoint m_mousePosition;
 private:
+	Engine();
 	// For fixed timestep.
 	chrono::time_point<chrono::steady_clock> m_start, m_end;
 	chrono::duration<double> m_diff;
 	double m_fps; // Changed to double.
 
 	const Uint8* m_pKeystates;
-	SDL_Window* m_pWindow; // Pointers are normal variables that hold addresses.
-	SDL_Renderer* m_pRenderer; // Pointer to "back buffer"
 	bool m_isRunning;
 
-	//// Example-specific properties.
-	//SDL_Texture* m_pBGTexture;
-	//SDL_Texture* m_pEnemyTexture;
-	//Sprite* m_pBackground;
-	//Player* m_pPlayer;
-	//Mix_Chunk* m_pSlacker;
-	//Mix_Chunk* m_pJump;
-	//Mix_Music* m_pGuile;
-	//vector<PlayerBullet*> m_playerBullets;
-	//vector<Enemy*> m_enemies;
-	//int m_eCtr, m_eCtrMax;
+	// Example-specific properties.
+	//double speed;
+	//SDL_Texture *m_pShipTexture, *m_pBGTexture, *m_pBulTexture, *m_pEnemyTexture;
+	//SDL_Rect m_srcShip;
+	//Player* m_ship; // Floating-point precision.
+	//SDL_FRect m_bg1, m_bg2;
+	//float m_scrollSpeed;
+	//int m_enemyCtr, m_enemyMax; // Enemy timer properties. Frame-based
+	//vector<Bullet*>  m_bulletVec;
+	//vector<Enemy*> m_enemyVec;
+	//Mix_Music* m_bgMusic;
+	//bool plrCanShoot;
+	//map<string, Mix_Chunk*> m_sfx; // Holding player shoot, enemy shoot, and collider sounds
 
 	chrono::time_point<chrono::steady_clock> lastFrameTime, thisFrameTime; // Cleaned this up.
 	chrono::duration<double> lastFrameDuration;
@@ -56,11 +61,10 @@ private:
 	int Init(const char*, const int, const int, const int, const int, const int);
 	void HandleEvents();
 	void Wake();
-	bool KeyDown(SDL_Scancode);
 	void Update();
 	void Sleep();
 	void Render();
-	void Clean();	
+	void Clean();
 };
 
 #endif

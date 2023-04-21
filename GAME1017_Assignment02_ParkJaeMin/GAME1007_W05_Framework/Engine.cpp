@@ -1,12 +1,16 @@
 #include "Engine.h"
 #include <iostream>
 #include <string>
-using namespace std;
+#include <sstream>
+#include "StateManager.h"
+#include "Button.h"
+#include "TextureManager.h"
+#include "EventManager.h"
+#include "RenderManager.h"
+#include "FontManager.h"
 
-Engine::Engine():m_pWindow(nullptr), m_pRenderer(nullptr), m_isRunning(false)
+Engine::Engine() :m_isRunning(false)
 {
-	m_eCtr = 0;
-	m_eCtrMax = 120; // Every 2 seconds, an enemy will spawn at a random Y.
 }
 
 int Engine::Run()
@@ -15,7 +19,7 @@ int Engine::Run()
 	{
 		return 1; // 1 arbitrarily means that engine is already running.
 	}
-	if (Init("GAME1017 Framework", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, NULL))
+	if (Init("GAME1017_A1", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, NULL))
 	{
 		return 2; // 2 arbitrarily means that something went wrong in init.
 	}
@@ -32,76 +36,52 @@ int Engine::Run()
 	return 0;
 }
 
-int Engine::Init(const char* title, const int xPos, const int yPos, 
+int Engine::Init(const char* title, const int xPos, const int yPos,
 	const int width, const int height, const int flags)
 {
-	cout << "Initializing framework..." << endl;
-	srand((unsigned)time(NULL)); // Seeding for rand().
+	std::cout << "Initializing framework..." << std::endl;
+	srand((unsigned)time(nullptr)); // Seed random sequence. Only once.
 	SDL_Init(SDL_INIT_EVERYTHING);
-	m_pWindow = SDL_CreateWindow(title,	xPos, yPos, width, height, flags);
-	if (m_pWindow == nullptr)
-	{
-		cout << "Error during window creation!" << endl;
-		return 1;
-	}
-	m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
-	if (m_pRenderer == nullptr)
-	{
-		cout << "Error during renderer creation!" << endl;
-		return 1;
-	}
-	// Initialize SDL sublibraries.
-	if (IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG) != 0)
-	{
-		m_pBGTexture = IMG_LoadTexture(m_pRenderer, "../Assets/img/background.jpg");
-		m_pEnemyTexture = IMG_LoadTexture(m_pRenderer, "../Assets/img/enemies.png");
-	}
-	else return 1; // Image init failed.
-	if (Mix_Init(MIX_INIT_MP3) != 0)
-	{
-		Mix_OpenAudio(22050, AUDIO_S16SYS, 2, 2048);
+	REMA::Init(title, xPos, yPos, width, height, flags, flags);
+	TEMA::Init();
+	EVMA::Init();
+	if (Mix_Init(MIX_INIT_MP3) != 0) {
+		// Configure mixer
+		Mix_OpenAudio(44100, AUDIO_S16SYS, 2, 2048);
 		Mix_AllocateChannels(16);
-		m_pSlacker = Mix_LoadWAV("../Assets/aud/slacker.wav");
-		m_pJump = Mix_LoadWAV("../Assets/aud/jump.wav");
-		m_pGuile = Mix_LoadMUS("../Assets/aud/guile.mp3");
+		// Load background music
+		backgroundMusic.emplace("titleMusic", Mix_LoadMUS("../Assets/mus/titleMusic.mp3"));
+		backgroundMusic.emplace("playMusic", Mix_LoadMUS("../Assets/mus/bgMusic.mp3"));
+
+		// Ensuring the background music has no errors
+		for (pair<string, Mix_Music*> bgMusic : backgroundMusic)
+		{
+			if (bgMusic.second == nullptr)
+			{
+				std::cout << SDL_GetError << std::endl;
+			}
+		}
 	}
-	else return 1; // Mixer init failed.
-	// Example-specific initialization.
-	m_pBackground = new Sprite({0,0,1024,768}, {0.0f,0.0f,1024.0f,768.0f});
-	m_pPlayer = new Player({ 400.0f, 400.0f, 50.0f, 50.0f }, 300.0f);
-	Mix_VolumeMusic(16); // 0-128.
-	Mix_PlayMusic(m_pGuile, -1);
-	// Initialize rest of framework.
+	else return false;
+
+
+	std::cout << SDL_GetError() << std::endl;
+
+
 	m_fps = 1.0 / (double)FPS; // Converts FPS into a fraction of seconds.
 	m_pKeystates = SDL_GetKeyboardState(nullptr);
 	lastFrameTime = chrono::high_resolution_clock::now();
 	m_isRunning = true; // Start your engine.
+
+	CButton::Init();
+
+	STMA::ChangeState(new TitleState());
 	return 0;
 }
 
 void Engine::HandleEvents()
 {
-	cout << "Handling events..." << endl;
-	SDL_Event event;
-	while (SDL_PollEvent(&event))
-	{
-		switch (event.type)
-		{
-		case SDL_QUIT: // Pressing 'X' icon in SDL window.
-			m_isRunning = false; // Tell Run() we're done.
-			break;
-		case SDL_KEYDOWN:
-			// Spawn player bullet.
-			if (event.key.keysym.scancode == SDL_SCANCODE_SPACE)
-			{
-				m_playerBullets.push_back( new PlayerBullet(
-					{m_pPlayer->GetDst()->x, m_pPlayer->GetDst()->y, 8.0f, 8.0f },
-					500.0f) );
-				Mix_PlayChannel(-1, m_pSlacker, 0);
-			}
-			break;
-		}
-	}
+	EVMA::HandleEvents();
 }
 
 void Engine::Wake()
@@ -124,51 +104,23 @@ bool Engine::KeyDown(SDL_Scancode c)
 	return false;
 }
 
-void Engine::Update()
+Engine& Engine::Instance()
 {
-	cout << "Updating frame..." << endl;
-	// Move player vertically.
-	if (KeyDown(SDL_SCANCODE_W)) { m_pPlayer->GetDst()->y -= m_pPlayer->GetSpeed() * deltaTime; }
-	else if (KeyDown(SDL_SCANCODE_S)) { m_pPlayer->GetDst()->y += m_pPlayer->GetSpeed() * deltaTime; }
-	// Move player horizontally.
-	if (KeyDown(SDL_SCANCODE_A)) { m_pPlayer->GetDst()->x -= m_pPlayer->GetSpeed() * deltaTime; }
-	else if (KeyDown(SDL_SCANCODE_D)) { m_pPlayer->GetDst()->x += m_pPlayer->GetSpeed() * deltaTime; }
-	for (PlayerBullet* p : m_playerBullets)
-	{
-		p->Update(deltaTime);
-	}
-	for (Enemy* e : m_enemies)
-	{
-		e->Update(deltaTime);
-	}
-	if (m_eCtr++ % m_eCtrMax == 0)
-	{
-		m_enemies.push_back(new Enemy({0,0,40,57},
-			{ 1024.0, (float)(rand() % 711), 40.0f, 57.0f},
-			200.0f));
-	}
-	// Collision between player bullets and enemies.
-	for (unsigned b = 0; b < m_playerBullets.size(); b++)
-	{
-		for (unsigned e = 0; e < m_enemies.size(); e++)
-		{
-			if (SDL_HasIntersectionF(m_playerBullets[b]->GetDst(), m_enemies[e]->GetDst()))
-			{
-				Mix_PlayChannel(-1, m_pJump, 0);
-				delete m_playerBullets[b];
-				m_playerBullets[b] = nullptr;
-				m_playerBullets.erase(m_playerBullets.begin() + b);
-				delete m_enemies[e];
-				m_enemies[e] = nullptr;
-				m_enemies.erase(m_enemies.begin() + e);
-				goto end; // Or return; since we're at the end of the Update().
-			}
-		}
-	}
-	end:; // Semicolon needed here because no statements follow.
+	static Engine instance; // Creating Engine Object
+	return instance;
 }
 
-void Engine::Sleep() 
+
+
+void Engine::Update()
+{
+	//cout << "Updating frame..." << endl;
+	string tickLabel = "DT: " + to_string(deltaTime);
+	SDL_SetWindowTitle(REMA::GetWindow(), tickLabel.c_str()); // c_str just returns the char array (char *)
+	STMA::Update(); // Updating current state
+}
+
+void Engine::Sleep()
 {
 	// Note: Not really better, but you can decide to not limit frameRate and just use deltaTime.
 	// Comment all this out to just use deltaTime.
@@ -180,55 +132,44 @@ void Engine::Sleep()
 
 void Engine::Render()
 {
-	cout << "Rendering changes..." << endl;
-	SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 0, 255);
-	SDL_RenderClear(m_pRenderer);
-	// Render example objects.
-	SDL_RenderCopyF(m_pRenderer, m_pBGTexture, m_pBackground->GetSrc(), m_pBackground->GetDst());
-	SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 255, 255);
-	SDL_RenderFillRectF(m_pRenderer, m_pPlayer->GetDst());
-	for (PlayerBullet* p : m_playerBullets)
-	{
-		SDL_SetRenderDrawColor(m_pRenderer, 0, 255, 0, 255);
-		SDL_RenderFillRectF(m_pRenderer, p->GetDst());
-	}
-	for (Enemy* e : m_enemies)
-	{
-		SDL_RenderCopyExF(m_pRenderer, m_pEnemyTexture, e->GetSrc(), e->GetDst(), 
-			-90.0, NULL, SDL_FLIP_NONE );
-	}
-	// Flips the buffer and draw to window.
-	SDL_RenderPresent(m_pRenderer); 
+	//cout << "Rendering changes..." << endl;
+	STMA::Render();
+
+	SDL_RenderPresent(REMA::GetRenderer()); // Flips the buffers.
 }
+
+double Engine::GetDeltaTime()
+{
+	return deltaTime;
+}
+
+void Engine::SetRunning(bool running)
+{
+	m_isRunning = running;
+}
+
 
 void Engine::Clean()
 {
-	cout << "Cleaning up..." << endl;
-	delete m_pBackground;
-	delete m_pPlayer;
-	for (PlayerBullet* p : m_playerBullets)
+	std::cout << "Cleaning up..." << std::endl;
+
+	// Deletion of renderer and window
+	REMA::Quit();
+
+	// Deallocating all background music >:)
+	for (pair<string, Mix_Music*> music : backgroundMusic)
 	{
-		delete p;
-		p = nullptr;
+		Mix_FreeMusic(music.second);
 	}
-	m_playerBullets.clear();
-	m_playerBullets.shrink_to_fit();
-	for (Enemy* e : m_enemies)
-	{
-		delete e;
-		e = nullptr;
-	}
-	m_enemies.clear();
-	m_enemies.shrink_to_fit();
-	SDL_DestroyRenderer(m_pRenderer);
-	SDL_DestroyWindow(m_pWindow);
-	SDL_DestroyTexture(m_pBGTexture);
-	SDL_DestroyTexture(m_pEnemyTexture);
-	Mix_FreeChunk(m_pSlacker);
-	Mix_FreeChunk(m_pJump);
-	Mix_FreeMusic(m_pGuile);
+
+	backgroundMusic.clear(); // Finally, clearing out the math
 	Mix_CloseAudio();
 	Mix_Quit();
+	STMA::Quit();
+	TEMA::Quit();
+	EVMA::Quit();
 	IMG_Quit();
 	SDL_Quit();
 }
+
+map<std::string, Mix_Music*> Engine::backgroundMusic; // Stores all the music!

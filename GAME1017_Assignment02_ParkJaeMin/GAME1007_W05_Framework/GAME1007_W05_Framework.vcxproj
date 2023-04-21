@@ -142,24 +142,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerBullet.cpp" />
-    <ClCompile Include="ScrollingBackground.cpp" />
+    <ClCompile Include="BackgroundScrolling.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="SpriteSheet.cpp" />
+    <ClCompile Include="States.cpp" />
+    <ClCompile Include="StateManager.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Background.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="Frame.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerBullet.h" />
-    <ClInclude Include="ScrollingBackground.h" />
+    <ClInclude Include="BackgroundScrolling.h" />
+    <ClInclude Include="RenderManager.h" />
     <ClInclude Include="SpriteSheet.h" />
+    <ClInclude Include="States.h" />
+    <ClInclude Include="StateManager.h" />
+    <ClInclude Include="TextureManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Assets\img\background.png" />

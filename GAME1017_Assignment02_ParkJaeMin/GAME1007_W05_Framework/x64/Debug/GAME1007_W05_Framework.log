@@ -1,14 +1,129 @@
-﻿  Enemy.cpp
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Enemy.cpp(8,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  Engine.cpp
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(131,81): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(132,86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(134,81): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\Engine.cpp(135,86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+﻿  Engine.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(6,18): error C2614: 'Engine': illegal member initialization: 'm_pWindow' is not a base or member
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(6,38): error C2614: 'Engine': illegal member initialization: 'm_pRenderer' is not a base or member
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(8,2): error C2065: 'm_eCtr': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(9,2): error C2065: 'm_eCtrMax': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(41,2): error C2065: 'm_pWindow': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(42,6): error C2065: 'm_pWindow': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(47,2): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(47,35): error C2065: 'm_pWindow': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(48,6): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(56,3): error C2065: 'm_pBGTexture': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(56,34): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(57,3): error C2065: 'm_pEnemyTexture': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(57,37): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(64,3): error C2065: 'm_pSlacker': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(65,3): error C2065: 'm_pJump': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(66,3): error C2065: 'm_pGuile': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,2): error C2065: 'm_pBackground': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,22): error C2061: syntax error: identifier 'Sprite'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,29): error C2143: syntax error: missing ';' before '{'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,42): error C2143: syntax error: missing ';' before '}'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,43): error C2059: syntax error: ','
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(70,71): error C2059: syntax error: ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,18): error C2061: syntax error: identifier 'Player'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,25): error C2143: syntax error: missing ';' before '{'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,25): error C2143: syntax error: missing ')' before ';'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,25): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,57): error C2059: syntax error: ','
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(71,65): error C2059: syntax error: ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(72,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(72,2): error C2365: 'Mix_VolumeMusic': redefinition; previous definition was 'function'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\SDL\SDL2_mixer\include\SDL_mixer.h(2041): message : see declaration of 'Mix_VolumeMusic'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(73,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(73,2): error C2365: 'Mix_PlayMusic': redefinition; previous definition was 'function'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\SDL\SDL2_mixer\include\SDL_mixer.h(1812): message : see declaration of 'Mix_PlayMusic'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(73,16): error C2065: 'm_pGuile': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(75,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(75,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(76,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(76,46): error C2440: 'initializing': cannot convert from 'const Uint8 *' to 'int'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(76,15): message : There is no context in which this conversion is possible
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(77,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(77,54): error C2440: 'initializing': cannot convert from 'std::chrono::steady_clock::time_point' to 'int'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(77,16): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(78,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(79,2): error C2059: syntax error: 'return'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(80,1): error C2059: syntax error: '}'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(80,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(83,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(83,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(136,7): error C2065: 'PlayerBullet': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(136,21): error C2065: 'p': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(136,23): error C2143: syntax error: missing ';' before ':'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(136,25): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(136,40): error C2143: syntax error: missing ';' before ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(138,3): error C2065: 'p': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(140,7): error C2065: 'Enemy': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(140,14): error C2065: 'e': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(140,16): error C2143: syntax error: missing ';' before ':'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(140,18): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(140,27): error C2143: syntax error: missing ';' before ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(142,3): error C2065: 'e': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(144,6): error C2065: 'm_eCtr': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(144,17): error C2065: 'm_eCtrMax': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,3): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,27): error C2061: syntax error: identifier 'Enemy'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,33): error C2143: syntax error: missing ';' before '{'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,33): error C2143: syntax error: missing ')' before ';'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,43): error C2143: syntax error: missing ';' before '}'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(146,44): error C2059: syntax error: ','
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(147,4): error C2143: syntax error: missing ';' before '{'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(147,49): error C2143: syntax error: missing ';' before '}'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(147,50): error C2059: syntax error: ','
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(148,10): error C2059: syntax error: ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(148,11): error C2059: syntax error: ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(151,27): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(153,28): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(155,29): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(155,59): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(155,7): error C2660: 'SDL_HasIntersectionF': function does not take 1 arguments
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\SDL\SDL2\include\SDL_rect.h(285,34): message : see declaration of 'SDL_HasIntersectionF'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(157,25): error C2065: 'm_pJump': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(158,12): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(159,5): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(160,5): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(160,27): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(161,12): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(162,5): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(163,5): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(163,21): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(184,25): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(185,18): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(187,18): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(187,31): error C2065: 'm_pBGTexture': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(187,45): error C2065: 'm_pBackground': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(187,70): error C2065: 'm_pBackground': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(188,25): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(189,22): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(190,7): error C2065: 'PlayerBullet': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(190,21): error C2065: 'p': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(190,23): error C2143: syntax error: missing ';' before ':'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(190,25): error C2065: 'm_playerBullets': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(190,40): error C2143: syntax error: missing ';' before ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(192,26): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(193,23): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(193,36): error C2065: 'p': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(195,7): error C2065: 'Enemy': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(195,14): error C2065: 'e': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(195,16): error C2143: syntax error: missing ';' before ':'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(195,18): error C2065: 'm_enemies': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(195,27): error C2143: syntax error: missing ';' before ')'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(197,21): error C2065: 'm_pRenderer': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(197,34): error C2065: 'm_pEnemyTexture': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(197,51): error C2065: 'e': undeclared identifier
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.cpp(197,52): fatal  error C1003: error count exceeds 100; stopping compilation
+  EventManager.cpp
   GameObject.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\GameObject.cpp(68,50): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\GameObject.cpp(70,51): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
   Main.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Main.cpp(6,15): error C2248: 'Engine::Engine': cannot access private member declared in class 'Engine'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.h(34): message : see declaration of 'Engine::Engine'
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Engine.h(21): message : see declaration of 'Engine'
   Player.cpp
-  PlayerBullet.cpp
-C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\GAME1007_W05_Framework\PlayerBullet.cpp(8,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Player.cpp(9,10): fatal  error C1083: Cannot open include file: 'StateManager.h': No such file or directory
+  BackgroundScrolling.cpp
+  TextureManager.cpp
   Generating Code...
-  GAME1007_W05_Framework.vcxproj -> C:\Users\jaeti\source\repos\GAME1017_A1_StartProject\Bin\GAME1007_W05_Framework.exe

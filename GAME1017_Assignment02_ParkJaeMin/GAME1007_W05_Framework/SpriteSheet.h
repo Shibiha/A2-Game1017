@@ -24,9 +24,7 @@ public:
 
 private:
 	std::string m_name;
-
 	std::unordered_map<std::string, Animation> m_animations;
-
 	SDL_Texture* m_pTexture;
 };
 
