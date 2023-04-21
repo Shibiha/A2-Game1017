@@ -1,2 +1,33 @@
-﻿  BackgroundScrolling.cpp
-  GAME1007_W05_Framework.vcxproj -> C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin\Bin\GAME1007_W05_Framework.exe
+﻿  Background.cpp
+  Button.cpp
+  CollisionManager.cpp
+  EndButton.cpp
+  Enemy.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\Enemy.cpp(8,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Engine.cpp
+  EventManager.cpp
+  FontManager.cpp
+  GameObject.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\GameObject.cpp(68,50): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\GameObject.cpp(70,51): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+  Main.cpp
+  MathManager.cpp
+  ObstacleRow.cpp
+  Obstacle.cpp
+  PauseButton.cpp
+  Player.cpp
+  BackgroundScrolling.cpp
+  Primitives.cpp
+  RenderManager.cpp
+  SpriteSheet.cpp
+  StartButton.cpp
+  Generating Code...
+  Compiling...
+  State.cpp
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\State.cpp(93,69): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\GAME1007_W05_Framework\State.cpp(103,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  StateManager.cpp
+  TextureManager.cpp
+  Generating Code...
+  LINK : C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\\Bin\GAME1007_W05_Framework.exe not found or not built by the last incremental link; performing full link
+  GAME1007_W05_Framework.vcxproj -> C:\Users\jaeti\source\repos\GAME1007-Lab-Assignment\A2\A2-Game1017\GAME1017_Assignment02_ParkJaeMin-main\GAME1017_Assignment02_ParkJaeMin\Bin\GAME1007_W05_Framework.exe
